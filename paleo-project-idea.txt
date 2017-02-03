@@ -1,0 +1,15 @@
+
+
+conceptual basis of the project (I am interested in the effect
+of the KT extinction on fossil mammals...)
+
+discussion of data and computational challenges (I plan to
+use occurrence data from the PBDB to reconstruct fossil
+ranges...I will need to extract fossil age and locality data,
+format it for quantitative analyses, and visualize the results...
+
+
+If you are using the PBDB, you must also report the # of
+unique species for 3 groups. Rank these groups in order of
+preference and show the shell commands you used to
+extract unique names
