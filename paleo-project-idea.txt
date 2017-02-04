@@ -1,22 +1,18 @@
 The conceptual basis of the project:
 
-
-conceptual basis of the project (I am interested in the effect
-of the KT extinction on fossil mammals...)
+I am interested in seeing the trend of species diversity of the Delphinidae family through time. It is always fascinating to investigate how species classifications and research have led to the discovery of more and more species, so tracking the number of species over time would shed light on how this journey has looked.
 
 Discussion of data and computational challenges:
 
-discussion of data and computational challenges (I plan to
-use occurrence data from the PBDB to reconstruct fossil
-ranges...I will need to extract fossil age and locality data,
-format it for quantitative analyses, and visualize the results...
+I plan to use occurrence data from the PBDB for the Delphinidae family to reconstruct species diversity through time. I will need to extract geologic time and number of species,
+format the data for quantitative analyses, and visualize the results using R libraries.
 
 My ranking preferences and shell command for finding unique species for each group:
 -My ranking:
-1. Dolphinidae (dolphins) - 102 unique species
+1. Delphinidae (dolphins) - 102 unique species
 2. Pongidae (apes) - 41 unique species
 3. Canidae (dogs and foxes) - 302 unique species
 -The shell command for each group:
-1. Dolphinidae: cut -d "," -f 6,11  pbdb_data\(dolphins\).csv | sort -n | uniq | grep "species" | wc -l
+1. Delphinidae: cut -d "," -f 6,11  pbdb_data\(dolphins\).csv | sort -n | uniq | grep "species" | wc -l
 2. Pongidae: cut -d "," -f 6,11  pbdb_data\(apes\).csv | sort -n | uniq | grep "species" | wc -l
 3. Canidae: cut -d "," -f 6,11  pbdb_data\(dogs\ and\ foxes\).csv | sort -n | uniq | grep "species" | wc -l
