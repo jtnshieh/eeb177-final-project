@@ -4,11 +4,11 @@
 2. Use Python to loop through the previous set of data to generate the number of species for each geological time period (e.g. 40 Delphinidae species in the Pleistocene era). It might look something like this:
  - Create a dictionary consisting of Delphinidae species corresponding to their respective time periods
  - Loop through the dictionary to see how many Delphinidae species exist in each time period (i.e. count how many times each time period appears in the dictionary) and use another dictionary to keep track. Then order the dictionary to correspond to the chronology of the time periods.
- - In specific pseudocode form:
-	Delphinidae&TimePeriods = populate it with Delphinidae species and their respective time periods
-	DiversityInTimePeriods = {}
-	Go through time periods in Delphinidae&TimePeriods
-		Count how many times each time period appears
+ - In specific pseudocode form:                    
+	Delphinidae&TimePeriods = populate it with Delphinidae species and their respective time periods                 
+	DiversityInTimePeriods = {}                 
+	Go through time periods in Delphinidae&TimePeriods              
+		Count how many times each time period appears                                    
 		Add the time period and the corresponding times to DiveristyInTimePeriods
 3. Use the data obtained from step 2 to generate a "Delphinidae Diversity Through Time" plot using the appropriate R library. To be specific, I will use:
   - geoscalePlot(ages,data,units=c("Age","Epoch","Period"),
