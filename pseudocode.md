@@ -8,8 +8,8 @@
 	- Delphinidae&TimePeriods = populate it with Delphinidae species and their respective time periods
           DiversityInTimePeriods = {}                                        
           Go through time periods in Delphinidae&TimePeriods                                      
-                            Count how many times each time period appears                          
-                            Add the time period and the corresponding times to DiveristyInTimePeriods
+             +Count how many times each time period appears                          
+             +Add the time period and the corresponding times to DiveristyInTimePeriods
 3. Use the data obtained from step 2 to generate a "Delphinidae Diversity Through Time" plot using the appropriate R library. To be specific, I will use:
   - geoscalePlot(ages,data,units=c("Age","Epoch","Period"),
   tick.scale="myr",boxes="Age",abbrev, cex.age=0.3,cex.ts=0.4,cex.pt=1,
