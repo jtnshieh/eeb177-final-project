@@ -1,0 +1,36 @@
+---
+title: "graph_for_final_project"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+setwd("/home/eeb177-student/Desktop/eeb-177/eeb177-final-project") #you will need to change this to match your directory!
+cetacea <- read.csv("/home/eeb177-student/Desktop/eeb-177/eeb177-final-project/data_for_graphing", header = F, as.is = T)
+names(cetacea) <- c("genus", "species", "minage", "maxage")
+head(cetacea)
+
+cetacea_occ <- ggplot(cetacea, aes( x = species, maxage, colour = genus))
+# everything
+cetacea_occ + geom_linerange(aes(ymin = minage, ymax = maxage)) + theme(legend.position="none") +  coord_flip() +  theme(axis.text.y = element_text(size=1)) + scale_y_continuous(limits=c(0, 50), expand = c(0, 0), breaks=c(0, 10, 20, 30, 40, 50)) + labs(title = "Cetacea Fossil Occurrences", x = "Species", y = "Ma ago") + theme(plot.title = element_text(hjust = 0.5, size=22, face = "bold"), axis.title =element_text(size=20))
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
