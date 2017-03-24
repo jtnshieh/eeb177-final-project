@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "file names to match are: " $1 $2
-
-for data in $1
+for line in `cut -d "," -f 1 $1`
 do
-	grep $data in $2
+	grep -w $line --no-messages in $2
 done
